@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <title>VFlows - Teste</title>
+</head>
+
+<!-- -----------------------------------  CADASTRO FORNECEDOR/PRODUTO  ------------------------------------------- -->
+
+<body>
+  <div class="container">
+
+    <div class="container_cab">
+      <section class="header_cab">
+        <h2>CADASTRO FORNECEDOR/PRODUTO</h2>
+      </section>
+    </div>
+
+    <!-- ---------------------------------------  DADOS DO FORNECEDOR  ----------------------------------------------- -->
+
+    <section class="header">
+      <h3>Dados do Fornecedor</h3>
+    </section>
+
+    <Fieldset class="outline">
+
+      <form id="formFornecedor" class="form">
+
+        <div class="form-content">
+          <label for="RazaoSocial">Razão Social</label>
+          <input type="text" id="RazaoSocial" placeholder="Digite a Razão Social..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="CNPJ">CNPJ</label>
+          <input type="email" id="CNPJ" placeholder="Digite o CNPJ..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="NomeFantasia">Nome Fantasia</label>
+          <input type="text" id="NomeFantasia" placeholder="Digite o Nome Fantasia..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="InscricaoEstadual">Inscrição Estadual</label>
+          <input type="text" id="InscricaoEstadual" placeholder="Digite a Inscrição Estadual..." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="CEP">CEP</label>
+          <input type="text" id="CEP" placeholder="Digite o CEP..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="InscricaoMunicipal">Inscrição Municipal</label>
+          <input type="text" id="InscricaoMunicipal" placeholder="Digite a Inscrição Municipal..." />
+          <a>Aqui vai a mensagem de erro....</a>
+        </div>
+
+        <div class="form-content">
+          <label for="Endereco">Endereço</label>
+          <input type="text" id="Endereco" placeholder="Digite o Endereço..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Numero">Número</label>
+          <input type="number" id="Numero" placeholder="Digite o Número..." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Complemento">Complemento</label>
+          <input type="text" id="Complemento" placeholder="Digite o Complemento..." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Bairro">Bairro</label>
+          <input type="text" id="Bairro" placeholder="Digite o seu Bairro..." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Municipio">Municipio</label>
+          <input type="text" id="Municipio" placeholder="Digite o seu Municipio..." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Estado">Estado</label>
+          <input type="text" id="Estado" placeholder="Digite o seu Estado.." />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="PessoaContato">Nome da Pessoa de Contato</label>
+          <input type="text" id="PessoaContato" placeholder="Digite o Nome da Pessoa de Contato.." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Telefone">Telefone</label>
+          <input type="tel" id="Telefone" placeholder="Digite o seu Telefone..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+        <div class="form-content">
+          <label for="Email">E-mail</label>
+          <input type="email" id="Email" placeholder="Digite seu E-mail..." required />
+          <!-- <a>Aqui vai a mensagem de erro....</a> -->
+        </div>
+
+      </form>
+
+    </Fieldset>
+
+    <!-- ---------------------------------------  PRODUTOS  ----------------------------------------------- -->
+
+    <div class="container2">
+      <section class="header2">
+        <h3>Produtos</h3>
+      </section>
+      <fieldset class="outline" id="produtosFieldset">
+
+        <fieldset class="prod" id="produto1">
+
+          <legend class="legend">Produto - 1</legend>
+
+          <div class="form-content">
+            <label for="Produto1">Produto</label>
+            <input type="text" id="Produto1" required />
+            <!-- <a>Aqui vai a mensagem de erro....</a> -->
+          </div>
+
+          <div class="form-content">
+            <label for="UndMed1">UND. Medida</label>
+            <select id="UndMed1" required>
+              <option value="Kg">Kg</option>
+              <option value="g">g</option>
+            </select>
+            <!-- <a>Aqui vai a mensagem de erro....</a> -->
+          </div>
+
+          <div class="form-content">
+            <label for="Estoque1">QTDE. Em Estoque</label>
+            <input type="number" id="Estoque1" oninput="calcularValorTotal(1)" required />
+            <!-- <a>Aqui vai a mensagem de erro....</a> -->
+          </div>
+
+          <div class="form-content">
+            <label for="ValorUni1">Valor Unitário</label>
+            <input type="number" id="ValorUni1" oninput="calcularValorTotal(1)" required />
+            <!-- <a>Aqui vai a mensagem de erro....</a> -->
+          </div>
+
+          <div class="form-content">
+            <label for="ValorTotal1">Valor Total</label>
+            <input class="inputTotal" type="text" id="ValorTotal1" readonly required />
+            <!-- <a>Aqui vai a mensagem de erro....</a> -->
+          </div>
+
+          <div class="delete-icon" onclick="excluirProduto(1)">
+            <i class="fas fa-trash-alt"></i>
+          </div>      
+
+        </fieldset>
+
+        <form id="form" class="form">
+          <button class="botao" type="button" onclick="adicionarProduto()">Adicionar Produto</button>
+        </form>
+
+      </fieldset>
+    </div>
+    <!-- ---------------------------------------  ANEXOS  ----------------------------------------------- -->
+
+    <div class="container3">
+      <section class="footer">
+        <h3>Anexos</h3>
+      </section>
+
+      <fieldset class="outline">
+        <fieldset class="outline2">
+          <legend class="legend">Itens</legend>
+          <div id="documentos">
+            <!-- Documentos serão adicionados dinamicamente aqui -->
+          </div>
+        </fieldset>
+        <form id="form" class="form">
+          <button type="button" onclick="incluirAnexo()">Incluir Anexo</button>
+        </form>
+      </fieldset>
+
+      <form id="formEnviar" class="form">
+        <button type="submit">Salvar Fornecedor</button>
+      </form>
+
+      <div id="modalLoading" class="modal">
+        <div class="modal-content">
+          <p>Enviando dados...</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ---------------------------------------  ANEXOS / CÓDIGO ANTERIOR ----------------------------------------------- -->
+
+<!-- <div class="container3">
+  <section class="footer">
+    <h3>Anexos</h3>
+  </section>
+
+  <fieldset class="outline">
+    <fieldset class="outline2">
+      <legend class="legend">Itens</legend>
+      <form>
+        <i class="fas fa-trash-alt"></i>
+        <input type="file" id="file1" name="file" accept=".pdf, .doc, .docx">
+        <label for="file1">Documento Anexo 1</label><br>
+
+        <i class="fas fa-trash-alt"></i>
+        <input type="file" id="file2" name="file" accept=".pdf, .doc, .docx">
+        <label for="file2">Documento Anexo 2</label><br>
+
+        Accept especifica os tipos de arquivo permitidos
+        <br><br>
+
+      </form>
+    </fieldset>
+    <form id="form" class="form">
+      <button type="submit">Incluir Anexo</button>
+    </form>
+  </fieldset>
+  <form id="form" class="form">
+    <button type="submit">Salvar Fornecedor</button>
+  </form>
+
+</div> -->
+
+
+
+
+
+
+<!-- ---------------------------------------  PRODUTOS / CÓDIGO ANTERIOR ----------------------------------------------- -->
+
+
+<!-- <div class="container2">
+  <section class="header2">
+    <h3>Produtos</h3>
+  </section>
+  <fieldset class="outline">
+
+    <fieldset class="prod">
+
+      <legend class="legend">Produto - 1</legend>
+
+      <div class="form-content">
+        <label for="Produto1">Produto</label>
+        <input type="text" id="Produto1" required />
+        <a>Aqui vai a mensagem de erro....</a>
+</div>
+
+<div class="form-content">
+  <label for="UndMed1">UND. Medida</label>
+  <select id="UndMed1" required>
+    <option>Kg</option>
+    <option>g</option>
+  </select>
+  <a>Aqui vai a mensagem de erro....</a>
+</div>
+
+<div class="form-content">
+  <label for="Estoque1">QTDE. Em Estoque</label>
+  <input type="text" id="Estoque1" oninput="calcularValorTotal(1)" required />
+  <a>Aqui vai a mensagem de erro....</a>
+</div>
+
+<div class="form-content">
+  <label for="ValorUni1">Valor Unitário</label>
+  <input type="text" id="ValorUni1" oninput="calcularValorTotal(1)" required />
+  <a>Aqui vai a mensagem de erro....</a>
+</div>
+
+<div class="form-content">
+  <label for="ValorTotal1">Valor Total</label>
+  <input class="inputTotal" type="text" id="ValorTotal1" readonly required />
+  <a>Aqui vai a mensagem de erro....</a>
+</div>
+
+</fieldset>
+
+<fieldset class="prod">
+  <legend class="legend">Produto - 2</legend>
+  <div class="form-content">
+    <label for="Produto2">Produto</label>
+    <input type="text" id="Produto2" />
+    <a>Aqui vai a mensagem de erro....</a>
+  </div>
+
+  <div class="form-content">
+    <label for="UndMed2">UND. Medida</label>
+    <select class="select">
+      <option>Kg</option>
+      <option>g</option>
+    </select>
+    <a>Aqui vai a mensagem de erro....</a>
+  </div>
+
+  <div class="form-content">
+    <label for="Estoque2">QTDE. Em Estoque</label>
+    <input type="text" id="Estoque2" oninput="calcularValorTotal(2)" />
+    <a>Aqui vai a mensagem de erro....</a>
+  </div>
+
+  <div class="form-content">
+    <label for="ValorUni2">Valor Unitário</label>
+    <input type="text" id="ValorUni2" oninput="calcularValorTotal(2)" />
+    <a>Aqui vai a mensagem de erro....</a>
+  </div>
+
+  <div class="form-content">
+    <label for="ValorTotal2">Valor Total</label>
+    <input class="inputTotal" type="text" id="ValorTotal2" readonly />
+    <a>Aqui vai a mensagem de erro....</a>
+  </div>
+</fieldset>
+
+<form id="form" class="form">
+  <button type="submit">Adicionar Produto</button>
+</form>
+
+</fieldset>
+</div> -->
